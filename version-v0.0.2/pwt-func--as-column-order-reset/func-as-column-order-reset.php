@@ -16,8 +16,14 @@ function all_snippets__ajaxfunc__reset_column_order__vsh0_0_2() {
 
     // --- 2. INITIALIZATION & CONSTANTS --- //
     $slug_for_constant = preg_replace('/^all-/', '', $plugin_slug);
-    $base_dir_constant_name = 'ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__DATABASE__USERPREF_DIR';
-    $file_prefix_constant_name = 'ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__DATABASE__USERPREF_JSON_PREFIX';
+    $base_dir_constant_name = 'ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__WP_CONTENT__USERPREF_DIR';
+    if (!defined($base_dir_constant_name) && defined('ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__DATABASE__USERPREF_DIR')) {
+        $base_dir_constant_name = 'ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__DATABASE__USERPREF_DIR';
+    }
+    $file_prefix_constant_name = 'ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__WP_CONTENT__USERPREF_JSON_PREFIX';
+    if (!defined($file_prefix_constant_name) && defined('ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__DATABASE__USERPREF_JSON_PREFIX')) {
+        $file_prefix_constant_name = 'ALL_' . strtoupper(str_replace('-', '_', $slug_for_constant)) . '__DATABASE__USERPREF_JSON_PREFIX';
+    }
 
     // Helper functions
     $helper_get_func = 'all_snippets__helper__userpref_get_data__vsh0_0_2';

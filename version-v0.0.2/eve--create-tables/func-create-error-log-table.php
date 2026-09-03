@@ -1,9 +1,10 @@
 <?php defined('WPINC') || die;
+require_once dirname(__DIR__) . '/constants/database-table-names.php';
 
 if (!function_exists('all_snippets__helper__create_error_log_table__vsh0_0_2')) {
     function all_snippets__helper__create_error_log_table__vsh0_0_2() {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'allsnippets__error_log';
+        $table_name = $wpdb->prefix . ALL_SNIPPETS__DATABASE__TABLE_ERROR_LOG;
 
         $charset_collate = $wpdb->get_charset_collate();
 

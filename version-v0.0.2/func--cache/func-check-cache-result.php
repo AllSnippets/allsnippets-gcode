@@ -38,8 +38,11 @@ if (!function_exists('all_snippets__helper__cache_results__vsh0_0_2')) {
                     // Npr. iz ALL_BROKEN_MEDIA__CACHE_SLUG dobimo prefix ALL_BROKEN_MEDIA
                     // Uporabimo dinamično dolžino suffix-a namesto hardcoded številke
                     $prefix = substr($name, 0, -strlen($suffix));
-                    $json_const = $prefix . '__DATABASE__CACHE_JSON';
-                    
+                    $json_const = $prefix . '__WP_CONTENT__CACHE_JSON';
+                    if (!defined($json_const) && defined($prefix . '__DATABASE__CACHE_JSON')) {
+                        $json_const = $prefix . '__DATABASE__CACHE_JSON';
+                    }
+
                     if (defined($json_const)) {
                         $path_base = constant($json_const);
                         $plugins_to_check[$slug] = $path_base;

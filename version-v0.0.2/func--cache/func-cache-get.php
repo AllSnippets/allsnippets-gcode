@@ -45,8 +45,11 @@ if (!function_exists('all_snippets__helper__cache_get__vsh0_0_2')) {
                 if (strpos($name, 'ALL_') === 0 && substr($name, -strlen($suffix)) === $suffix) {
                     // Dobimo prefix brez '__CACHE_SLUG' (dinamična dolžina)
                     $prefix = substr($name, 0, -strlen($suffix)); 
-                    $json_const = $prefix . '__DATABASE__CACHE_JSON';
-                    
+                    $json_const = $prefix . '__WP_CONTENT__CACHE_JSON';
+                    if (!defined($json_const) && defined($prefix . '__DATABASE__CACHE_JSON')) {
+                        $json_const = $prefix . '__DATABASE__CACHE_JSON';
+                    }
+
                     if (defined($json_const)) {
                         $path_value = constant($json_const);
                         // Shranimo pot (ki je ponavadi base path za datoteko, npr. .../cache-file-)

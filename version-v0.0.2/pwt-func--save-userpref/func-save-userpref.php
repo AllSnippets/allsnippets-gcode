@@ -21,8 +21,14 @@ function all_snippets__ajaxfunc__save_userpref_admin_page__vsh0_0_2() {
     $helper_save_func = 'all_snippets__helper__userpref_save_data__vsh0_0_2';
     
     $slug_for_constant_clean = strtoupper(str_replace('-', '_', $plugin_slug));
-    $userpref_dir_constant = $slug_for_constant_clean . '__DATABASE__USERPREF_DIR';
-    $userpref_prefix_constant = $slug_for_constant_clean . '__DATABASE__USERPREF_JSON_PREFIX';
+    $userpref_dir_constant = $slug_for_constant_clean . '__WP_CONTENT__USERPREF_DIR';
+    if (!defined($userpref_dir_constant) && defined($slug_for_constant_clean . '__DATABASE__USERPREF_DIR')) {
+        $userpref_dir_constant = $slug_for_constant_clean . '__DATABASE__USERPREF_DIR';
+    }
+    $userpref_prefix_constant = $slug_for_constant_clean . '__WP_CONTENT__USERPREF_JSON_PREFIX';
+    if (!defined($userpref_prefix_constant) && defined($slug_for_constant_clean . '__DATABASE__USERPREF_JSON_PREFIX')) {
+        $userpref_prefix_constant = $slug_for_constant_clean . '__DATABASE__USERPREF_JSON_PREFIX';
+    }
     // --- 2. KONEC: INITIALIZATION & CONSTANTS --- //
 
 

@@ -1,11 +1,12 @@
 <?php defined('WPINC') || die;
+require_once dirname(__DIR__) . '/constants/database-table-names.php';
 if (!function_exists('all_snippets__helper__delete_transient__vsh0_0_2')) {
     function all_snippets__helper__delete_transient__vsh0_0_2($args) {
         global $wpdb;
 
 
         // --- 1. INPUT VALIDATION & DEFAULTS --- //
-        $table_name = $wpdb->prefix . '_allsnippets__options';
+        $table_name = $wpdb->prefix . ALL_SNIPPETS__DATABASE__TABLE_OPTIONS;
 
         $defaults = [
             'plugin_slug' => '',

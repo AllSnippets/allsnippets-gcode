@@ -1,11 +1,12 @@
 <?php defined('WPINC') || die;
+require_once dirname(__DIR__) . '/constants/database-table-names.php';
 add_action('plugins_loaded', 'all_snippets__hook__load_options_to_cache__vsh0_0_2', 1);
 function all_snippets__hook__load_options_to_cache__vsh0_0_2() {
     global $wpdb, $all_snippets_options_cache;
 
 
     // --- 1. INPUT VALIDATION --- //
-    $table_name = $wpdb->prefix . '_allsnippets__options';
+    $table_name = $wpdb->prefix . ALL_SNIPPETS__DATABASE__TABLE_OPTIONS;
     $all_snippets_options_cache = [];
 
     // Če tabela ne obstaja, ne nalagamo ničesar

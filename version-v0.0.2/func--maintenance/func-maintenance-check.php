@@ -85,7 +85,10 @@ if (!function_exists('all_snippets__hook__maintenance_check__vsh0_0_2')) {
             $prefix = strtoupper(str_replace('-', '_', $slug));
 
             // Ime konstante za cache datoteko
-            $const_name = $prefix . '__DATABASE__CACHE_JSON';
+            $const_name = $prefix . '__WP_CONTENT__CACHE_JSON';
+            if (!defined($const_name) && defined($prefix . '__DATABASE__CACHE_JSON')) {
+                $const_name = $prefix . '__DATABASE__CACHE_JSON';
+            }
 
             // Če konstanta ni definirana, ta vtičnik verjetno ne uporablja tega sistema preverjanja
             if (!defined($const_name)) {

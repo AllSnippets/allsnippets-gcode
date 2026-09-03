@@ -1,8 +1,9 @@
 <?php defined('WPINC') || die;
+require_once dirname(__DIR__) . '/constants/database-table-names.php';
 if (!function_exists('all_snippets__helper__create_options_table__vsh0_0_2')) {
     function all_snippets__helper__create_options_table__vsh0_0_2() {
         global $wpdb;
-        $table_name = $wpdb->prefix . '_allsnippets__options';
+        $table_name = $wpdb->prefix . ALL_SNIPPETS__DATABASE__TABLE_OPTIONS;
         $charset_collate = $wpdb->get_charset_collate();
 
         // Unikaten ključ zdaj vključuje plugin_slug in load_at za popolno varnost

@@ -16,8 +16,14 @@ function all_snippets__ajaxfunc__reset_filters__vsh0_0_2() {
 
     // --- 2. INITIALIZATION & CONSTANTS --- //
     $slug_for_constant_clean = str_replace('-', '_', $plugin_slug);
-    $userpref_dir_constant = strtoupper($slug_for_constant_clean) . '__DATABASE__USERPREF_DIR';
-    $userpref_prefix_constant = strtoupper($slug_for_constant_clean) . '__DATABASE__USERPREF_JSON_PREFIX';
+    $userpref_dir_constant = strtoupper($slug_for_constant_clean) . '__WP_CONTENT__USERPREF_DIR';
+    if (!defined($userpref_dir_constant) && defined(strtoupper($slug_for_constant_clean) . '__DATABASE__USERPREF_DIR')) {
+        $userpref_dir_constant = strtoupper($slug_for_constant_clean) . '__DATABASE__USERPREF_DIR';
+    }
+    $userpref_prefix_constant = strtoupper($slug_for_constant_clean) . '__WP_CONTENT__USERPREF_JSON_PREFIX';
+    if (!defined($userpref_prefix_constant) && defined(strtoupper($slug_for_constant_clean) . '__DATABASE__USERPREF_JSON_PREFIX')) {
+        $userpref_prefix_constant = strtoupper($slug_for_constant_clean) . '__DATABASE__USERPREF_JSON_PREFIX';
+    }
     // --- 2. KONEC: INITIALIZATION & CONSTANTS --- //
 
 

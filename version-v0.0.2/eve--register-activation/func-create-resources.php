@@ -4,7 +4,7 @@ if (!function_exists('all_snippets__helper__create_required_resources__vsh0_0_2'
         $all_constants = get_defined_constants(true);
         if (isset($all_constants['user'])) {
             foreach ($all_constants['user'] as $name => $value) {
-                if (substr($name, -30) === '__DATABASE__REQUIRED_RESOURCES') {
+                if (substr($name, -29) === '__WP_CONTENT__REQUIRED_RESOURCES' || substr($name, -30) === '__DATABASE__REQUIRED_RESOURCES') {
                     
                     // --- 1. BASE DIR --- //
                     if (isset($value['base_dir']) && !empty($value['base_dir'])) {
