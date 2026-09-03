@@ -1,0 +1,17 @@
+.gp-stats-sidebar--multi-grid--cell-bold {
+    font-weight: bold;
+}
+
+.gp-stats-sidebar--multi-grid--cell-header-icon {
+    text-align: center;
+}
+
+.gp-stats-sidebar--multi-grid--cell-header-icon .dashicons {
+    font-size: 12px;
+    display: inherit;
+    vertical-align: middle;
+}
+
+.gp-stats-sidebar--multi-grid--cell-value-center {
+    text-align: center;
+}

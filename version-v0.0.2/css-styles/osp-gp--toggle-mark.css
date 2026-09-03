@@ -1,0 +1,40 @@
+.gp-toggle-mark--root {
+    display: inline-flex;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    background: #f6f7f7;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.gp-toggle-mark--item {
+    position: relative;
+    margin: 0;
+}
+
+.gp-toggle-mark--item input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.gp-toggle-mark--label {
+    display: block;
+    padding: 6px 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gp-toggle-mark--item input[type="radio"]:checked + .gp-toggle-mark--label {
+    background: #2271b1;
+    color: #fff;
+}
+
+.gp-toggle-mark--item:first-child .gp-toggle-mark--label {
+    border-radius: 3px 0 0 3px;
+}
+
+.gp-toggle-mark--item:last-child .gp-toggle-mark--label {
+    border-radius: 0 3px 3px 0;
+}

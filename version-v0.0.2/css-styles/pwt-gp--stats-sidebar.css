@@ -1,0 +1,56 @@
+/* ZAČETEK: Skupni CSS stil za statistike */
+
+.gp-stats-sidebar--root {
+    text-align: left;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gp-stats-sidebar--title {
+    font-size: 12px;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+.gp-stats-sidebar--table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.gp-stats-sidebar--cell {
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.gp-stats-sidebar--cell-label {
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.gp-stats-sidebar--cell-value {
+    border: 1px solid #ddd;
+    padding: 3px;
+    text-align: center;
+}
+
+.gp-stats-sidebar--table th.gp-stats-sidebar--cell-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.gp-stats-sidebar--table td.gp-stats-sidebar--cell-value {
+    text-align: center;
+}
+
+.gp-stats-sidebar--table td.gp-stats-sidebar--cell-value.gp-stats-sidebar--cell-value-right {
+    text-align: right;
+}
+
+.gp-stats-sidebar--deletable {
+    color: #9E0306;
+}

@@ -1,0 +1,61 @@
+.gp-advset--info-acc--root {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 15px;
+    background: #f9f9f9;
+}
+
+.gp-advset--info-acc--title {
+    padding: 10px 15px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.2s;
+}
+
+.gp-advset--info-acc--title:hover {
+    background: #f0f0f0;
+}
+
+.gp-advset--info-acc--content {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.gp-advset--info-acc--root.open .gp-advset--info-acc--content {
+    display: block;
+}
+
+.gp-advset--info-acc--title .dashicons {
+    transition: transform 0.2s ease;
+}
+
+.gp-advset--info-acc--root.open .gp-advset--info-acc--title .dashicons {
+    transform: rotate(180deg);
+}
+
+.gp-advset--info-acc--text {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.gp-advset--info-acc--box {
+    background: #fff;
+    border-left: 4px solid #72aee6;
+    padding: 10px 15px;
+    margin: 15px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.gp-advset--info-acc--list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

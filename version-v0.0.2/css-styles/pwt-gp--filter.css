@@ -1,0 +1,51 @@
+.gp-filter-radio--root {
+    display: flex;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    background: #f6f7f7;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.gp-filter-radio--label {
+    position: relative;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+    padding: 0px !important;
+}
+
+.gp-filter-radio--label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.gp-filter-radio--text {
+    display: block;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px;
+}
+
+.gp-filter-radio--label:not(:last-child) .gp-filter-radio--text {
+    border-right: 1px solid #8c8f94;
+}
+
+.gp-filter-radio--label input[type="radio"]:checked + .gp-filter-radio--text {
+    background: #2271b1;
+    color: white;
+}
+
+.gp-filter-radio--label:hover .gp-filter-radio--text {
+    background: #f0f0f1;
+}
+
+.gp-filter-radio--label input[type="radio"]:checked:hover + .gp-filter-radio--text {
+    background: #135e96;
+}
