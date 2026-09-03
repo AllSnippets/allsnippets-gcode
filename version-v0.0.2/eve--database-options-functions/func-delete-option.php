@@ -1,5 +1,4 @@
 <?php defined('WPINC') || die;
-require_once dirname(__DIR__) . '/constants/database-table-names.php';
 if (!function_exists('all_snippets__helper__delete_option__vsh0_0_2')) {
     function all_snippets__helper__delete_option__vsh0_0_2($args) {
         global $wpdb;
