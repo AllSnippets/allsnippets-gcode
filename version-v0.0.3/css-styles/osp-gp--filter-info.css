@@ -1,0 +1,75 @@
+.gp-filter-reset--root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+    margin: 0px 10px;
+}
+
+.gp-filter-reset--count-bubble {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    background: #1F6B63;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 1;
+}
+
+.gp-filter-reset--reset-button-small {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 20px;
+    padding: 4px 8px;
+    background: transparent;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    font-size: 12px;
+    color: #666;
+    line-height: 15px;
+}
+
+.gp-filter-reset--reset-button-small .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #666;
+    transition: transform 0.2s ease;
+}
+
+.gp-filter-reset--reset-button-small:hover {
+    background: #f0f0f1;
+    border-color: #8c8f94;
+    color: #1d2327;
+}
+
+.gp-filter-reset--reset-button-small:hover .dashicons {
+    color: #1d2327;
+    transform: rotate(180deg);
+}
+
+.gp-filter-reset--reset-button-small:active {
+    background: #e0e0e0;
+    transform: scale(0.95);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

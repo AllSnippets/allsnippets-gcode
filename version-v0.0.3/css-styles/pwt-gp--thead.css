@@ -1,0 +1,47 @@
+.wp-list-table th,
+.wp-list-table td {
+    border-bottom: 1px solid #8c8c8c;
+    padding: 8px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.gp-main-table--root {
+    box-shadow: 0px 0 20px 0px rgb(0 0 0 / 26%) !important;
+}
+
+.gp-main-table--thead-sticky {
+    position: sticky;
+    top: 32px;
+    z-index: 20;
+    background: #e3c5b0;;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.35);
+}
+.gp-main-table--thead-sticky th a,
+.gp-main-table--thead-sticky th a:visited,
+.gp-main-table--thead-sticky th a:hover {
+    color: #5e2704;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.gp-main-table--thead-sticky th {
+    border-bottom: 1px solid #55290c !important;
+    border-right: 1px solid #55270a36 !important;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+}
+
+.gp-main-table--thead-sticky th a.gp-main-table--sorting-link:hover,
+.gp-main-table--thead-sticky th a.gp-main-table--sorting-link:focus {
+    color: #361405;
+    text-decoration: underline;
+}
+
+.gp-main-table--thead-sticky th a.gp-sorting-link--active {
+    color: #301603;
+    text-decoration: underline;
+}
+
+table.gp-main-table--root > tbody > tr:first-child > td {
+    padding-top: 20px !important;
+}

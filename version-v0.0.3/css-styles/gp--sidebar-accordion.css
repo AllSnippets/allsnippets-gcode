@@ -1,0 +1,65 @@
+.gp-sidebar--accordion {
+    margin-bottom: 0;
+}
+
+.gp-sidebar--accordion--toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    background: #FFFFFF;
+    border: 1px solid #E8D5C4;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4A2C1A;
+    transition: all 0.15s ease;
+    user-select: none;
+    margin: 0;
+    text-align: left;
+}
+
+.gp-sidebar--accordion--toggle:hover {
+    background: #FFF9F5;
+    border-color: #D4B8A0;
+}
+
+.gp-sidebar--accordion--toggle:active {
+    background: #F4E3D5;
+}
+
+.gp-sidebar--accordion--toggle-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gp-sidebar--accordion--toggle-icon {
+    font-size: 16px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+    color: #632801;
+}
+
+.gp-sidebar--accordion[aria-expanded="true"] .gp-sidebar--accordion--toggle-icon {
+    transform: rotate(180deg);
+}
+
+.gp-sidebar--accordion--content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0;
+}
+
+.gp-sidebar--accordion[aria-expanded="true"] .gp-sidebar--accordion--content {
+    max-height: none;
+    overflow: visible;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

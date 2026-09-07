@@ -1,0 +1,41 @@
+.gp-pagination--limit-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1;
+}
+
+.gp-pagination--limit-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gp-pagination--limit-label {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.2;
+}
+
+.gp-pagination--limit-input {
+    width: 70px;
+    height: 25px;
+    min-height: 25px !important;
+    text-align: center;
+    padding: 0px 6px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-size: 14px;
+}
+
+.gp-pagination--limit-btn {
+    padding: 0px 12px;
+    height: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}

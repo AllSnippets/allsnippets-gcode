@@ -1,0 +1,9 @@
+.gp-td-prev-height--root {
+    display: flex;
+    flex-direction: column;
+}
+
+.gp-td-prev-height--max-height {
+    max-height: 35px;
+    overflow: hidden;
+}

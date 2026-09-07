@@ -1,0 +1,28 @@
+.gp-header-title--root {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 25px 10px;
+    gap: 20px;
+}
+
+.gp-header-title--title {
+    color: #432202;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.gp-header-title--logo-facicon-on-the-right-side {
+    width: 235px;
+    margin-right: 10px;
+}
+
+.gp-header-title--subtitle {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    text-align: center;
+    font-size: 23px;
+}

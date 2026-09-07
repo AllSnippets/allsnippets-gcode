@@ -1,0 +1,51 @@
+.gp-advset--root {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+}
+
+.gp-advset--root.is-open {
+    right: 350px;
+}
+
+.gp-advset--header {
+    background: #0073aa;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gp-advset--header-title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.gp-advset--close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gp-advset--content {
+    padding: 30px;
+    height: calc(100vh - 240px);
+    overflow-y: auto;
+}

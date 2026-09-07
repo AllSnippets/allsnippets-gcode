@@ -1,0 +1,24 @@
+body {
+    width: fit-content;
+    background-color: #E0F2F2;
+    min-width: 100%;
+}
+
+#wpbody-content > :not(
+    .gp-main-view--root,
+    .gp-sidebar--root,
+    .gp-sidebar--overlay,
+    .gp-loading--overlay
+) {
+    display: none !important;
+}
+
+.notice {
+    display: none;
+}
+
+.gp-main-view--root {
+    margin-top: 70px;
+    padding: 0 20px;
+    min-height: calc(100vh - 42px);
+}

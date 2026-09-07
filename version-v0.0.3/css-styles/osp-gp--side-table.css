@@ -1,0 +1,40 @@
+.gp-side-table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #EDE9E5;
+}
+
+.gp-side-table tr:first-child {
+    background: #E1DBD4;
+}
+
+.gp-side-table th,
+.gp-side-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.gp-side-table th {
+    text-align: left;
+}
+
+.gp-side-table .gp-col-center {
+    text-align: center;
+}
+
+/* Helper classes for column widths */
+.gp-w-30 {
+    width: 30px;
+}
+
+.gp-w-50 {
+    width: 50px;
+}
+
+.gp-w-70 {
+    width: 70px;
+}
+
+.gp-w-auto {
+    width: auto;
+}

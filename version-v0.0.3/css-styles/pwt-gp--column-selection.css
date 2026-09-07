@@ -1,0 +1,62 @@
+.gp-column-selection--root {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 6px 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gp-column-selection--root li {
+    margin: 0;
+    padding: 0;
+}
+
+.gp-column-selection--root label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    background: #FFFFFF;
+    border: 1px solid #E8D5C4;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4A2C1A;
+    transition: all 0.15s ease;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gp-column-selection--root label:hover {
+    background: #FFF9F5;
+    border-color: #D4B8A0;
+    box-shadow: 0 1px 3px rgba(99, 40, 1, 0.08);
+}
+
+.gp-column-selection--root label:active {
+    box-shadow: 0 0 2px rgba(99, 40, 1, 0.1);
+}
+
+.gp-column-selection--checkbox {
+    margin: 0;
+    cursor: pointer;
+    accent-color: #632801;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.gp-column-selection--checkbox:checked + span {
+    color: #632801;
+    font-weight: 500;
+}
+
+.gp-column-selection--root label:has(.gp-column-selection--checkbox:checked) {
+    background: #F4E3D5;
+    border-color: #C9A882;
+    box-shadow: 0 1px 2px rgba(99, 40, 1, 0.1);
+}
