@@ -45,7 +45,7 @@
                 accordion.setAttribute(expandedAttr, 'false');
             }
             
-            const toggle = accordion.querySelector(toggleSelector);
+            const toggle = accordion.querySelector(':scope > ' + toggleSelector);
             if (toggle && !toggle.hasAttribute(expandedAttr)) {
                 toggle.setAttribute(expandedAttr, 'false');
             }

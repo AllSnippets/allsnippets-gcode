@@ -44,7 +44,7 @@
     color: #632801;
 }
 
-.gp-sidebar--accordion[aria-expanded="true"] .gp-sidebar--accordion--toggle-icon {
+.gp-sidebar--accordion[aria-expanded="true"] > .gp-sidebar--accordion--toggle .gp-sidebar--accordion--toggle-icon {
     transform: rotate(180deg);
 }
 
@@ -55,7 +55,7 @@
     padding: 0;
 }
 
-.gp-sidebar--accordion[aria-expanded="true"] .gp-sidebar--accordion--content {
+.gp-sidebar--accordion[aria-expanded="true"] > .gp-sidebar--accordion--content {
     max-height: none;
     overflow: visible;
     padding-top: 12px;
