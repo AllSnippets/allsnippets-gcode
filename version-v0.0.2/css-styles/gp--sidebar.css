@@ -21,6 +21,9 @@
     right: 0;
     width: 350px;
     height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     background: #FFFFFF;
     border-left: 1px solid #DEC8B7;
     z-index: 9999;
@@ -57,9 +60,21 @@
     height: 20px;
 }
 
+.gp-sidebar--content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+
 .gp-sidebar-content--root {
     padding: 20px;
-    height: 100%;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    height: auto;
+    min-height: 0;
+    overflow-x: hidden;
     overflow-y: auto;
     position: relative;
     z-index: 10;

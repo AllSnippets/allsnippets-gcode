@@ -56,7 +56,8 @@
 }
 
 .gp-sidebar--accordion[aria-expanded="true"] .gp-sidebar--accordion--content {
-    max-height: 2000px;
+    max-height: none;
+    overflow: visible;
     padding-top: 12px;
     display: flex;
     flex-direction: column;
