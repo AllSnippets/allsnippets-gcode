@@ -1,0 +1,29 @@
+:root {
+    --gp-sidebar-width: 350px;
+    --gp-advset-width: 400px;
+    --gp-admin-panel-gutter: 40px;
+    --gp-admin-edge-gap: 30px;
+    --gp-sidebar-toggle-width: 30px;
+}
+
+.gp-admin-panel--root {
+    position: fixed;
+    top: 32px;
+    right: 0;
+    height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    z-index: 9999;
+    overflow: visible;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.gp-admin-panel--root > * {
+    pointer-events: auto;
+}
+
+.gp-admin-panel--root.is-hidden {
+    transform: translateX(var(--gp-sidebar-width));
+}
